@@ -23,7 +23,9 @@
         <link href="jspsych-6.3.1/css/jspsych.css" rel="stylesheet" type="text/css">
     </head>
     <body></body>
-    <script></script>
+    <script>
+
+const WEBGAZER_TARGET_CSS_ID = '#jspsych-video-button-response-stimulus';
 
 var subject_id= jsPsych.data.getURLVariable('PROLIFIC_PID');
 var study_id= jsPsych.data.getURLVariable('STUDY_ID');
@@ -506,5 +508,5 @@ timeline.push(mcGurkEnd);
         },
     extensions: [{type: 'webgazer'}]
     })
-</script>
+    </script>
 </html>
