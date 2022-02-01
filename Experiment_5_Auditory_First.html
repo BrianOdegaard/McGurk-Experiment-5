@@ -271,10 +271,7 @@ var Practice = {
         { video: ['video/AuditoryGaVisualTa.mp4'], syllables: jsPsych.randomization.repeat(['Ga', 'Ta', 'Ka', 'Na'],1) },
         { video: ['video/AuditoryTaVisualMa.mp4'], syllables: jsPsych.randomization.repeat(['Ta', 'Ma', 'Pa', 'Da'],1) },
     ],
-    sample: {
-        type: 'with-replacement',
-        size: 10
-    },
+    randomize_order: true,
     repetitions: 0
     };
 timeline.push(Practice);
