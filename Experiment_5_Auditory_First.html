@@ -47,7 +47,7 @@ timeline.push(preloadImg)
 
 var preloadVid= {
   type: 'preload',
-  video: ['video/AuditoryBaVisualBa.mp4','video/AuditoryMaVisualKa.mp4','video/AuditoryBaVisualGa.mp4','video/AuditoryBaVisualKa.mp4','video/AuditoryPaVisualKa.mp4','video/AuditoryNaVisualDa.mp4','video/AuditoryDaVisualMa.mp4','video/AuditoryGaVisualTa.mp4','video/AuditoryTaVisualMa.mp4'],
+  video: ['video/AuditoryBaVisualBa.mp4','video/AuditoryMaVisualTa.mp4','video/AuditoryBaVisualKa.mp4','video/AuditoryPaVisualDa.mp4','video/AuditoryNaVisualDa.mp4','video/AuditoryDaVisualMa.mp4','video/AuditoryTaVisualGa.mp4'],
   message: 'Welcome to our experiment! Please wait a few moments while the video files load.'
 };
 timeline.push(preloadVid)
@@ -262,14 +262,12 @@ var Practice = {
         }
     ],   
     timeline_variables: [
-        { video: ['video/AuditoryMaVisualKa.mp4'], syllables: jsPsych.randomization.repeat(['Ma', 'Ka', 'Na', 'La'],1) },
-        { video: ['video/AuditoryBaVisualGa.mp4'], syllables: jsPsych.randomization.repeat(['Ba', 'Ga', 'Da', 'Ma'],1) },
+        { video: ['video/AuditoryMaVisualTa.mp4'], syllables: jsPsych.randomization.repeat(['Ma', 'Ta', 'Na', 'La'],1) },
         { video: ['video/AuditoryBaVisualKa.mp4'], syllables: jsPsych.randomization.repeat(['Ba', 'Ka', 'Ga', 'Da'],1) },
-        { video: ['video/AuditoryPaVisualKa.mp4'], syllables: jsPsych.randomization.repeat(['Pa', 'Ka', 'Da', 'Ta'],1) },
+        { video: ['video/AuditoryPaVisualDa.mp4'], syllables: jsPsych.randomization.repeat(['Pa', 'Da', 'Ka', 'Ta'],1) },
         { video: ['video/AuditoryNaVisualDa.mp4'], syllables: jsPsych.randomization.repeat(['Na', 'Da', 'Ka', 'Ma'],1) },
         { video: ['video/AuditoryDaVisualMa.mp4'], syllables: jsPsych.randomization.repeat(['Da', 'Ma', 'Ba', 'Na'],1) },
-        { video: ['video/AuditoryGaVisualTa.mp4'], syllables: jsPsych.randomization.repeat(['Ga', 'Ta', 'Ka', 'Na'],1) },
-        { video: ['video/AuditoryTaVisualMa.mp4'], syllables: jsPsych.randomization.repeat(['Ta', 'Ma', 'Pa', 'Da'],1) },
+        { video: ['video/AuditoryTaVisualGa.mp4'], syllables: jsPsych.randomization.repeat(['Ta', 'Ga', 'Ka', 'Da'],1) },
     ],
     randomize_order: true,
     repetitions: 0
@@ -329,18 +327,16 @@ timeline.push(trialInstructions);
                     require_movement:true
         }
     ],
-    timeline_variables: [
-        { video: ['video/AuditoryMaVisualKa.mp4'], syllables: jsPsych.randomization.repeat(['Ma', 'Ka', 'Na', 'La'],1) },
-        { video: ['video/AuditoryBaVisualGa.mp4'], syllables: jsPsych.randomization.repeat(['Ba', 'Ga', 'Da', 'Ma'],1) },
+   timeline_variables: [
+        { video: ['video/AuditoryMaVisualTa.mp4'], syllables: jsPsych.randomization.repeat(['Ma', 'Ta', 'Na', 'La'],1) },
         { video: ['video/AuditoryBaVisualKa.mp4'], syllables: jsPsych.randomization.repeat(['Ba', 'Ka', 'Ga', 'Da'],1) },
-        { video: ['video/AuditoryPaVisualKa.mp4'], syllables: jsPsych.randomization.repeat(['Pa', 'Ka', 'Da', 'Ta'],1) },
+        { video: ['video/AuditoryPaVisualDa.mp4'], syllables: jsPsych.randomization.repeat(['Pa', 'Da', 'Ka', 'Ta'],1) },
         { video: ['video/AuditoryNaVisualDa.mp4'], syllables: jsPsych.randomization.repeat(['Na', 'Da', 'Ka', 'Ma'],1) },
         { video: ['video/AuditoryDaVisualMa.mp4'], syllables: jsPsych.randomization.repeat(['Da', 'Ma', 'Ba', 'Na'],1) },
-        { video: ['video/AuditoryGaVisualTa.mp4'], syllables: jsPsych.randomization.repeat(['Ga', 'Ta', 'Ka', 'Na'],1) },
-        { video: ['video/AuditoryTaVisualMa.mp4'], syllables: jsPsych.randomization.repeat(['Ta', 'Ma', 'Pa', 'Da'],1) },
+        { video: ['video/AuditoryTaVisualGa.mp4'], syllables: jsPsych.randomization.repeat(['Ta', 'Ga', 'Ka', 'Da'],1) },
     ],
     random_order: true,
-    repetitions: 8
+    repetitions: 10
     };
     timeline.push(mcGurktrial);
 
@@ -388,17 +384,15 @@ timeline.push(mcGurkEnd);
         }
     ],
     timeline_variables: [
-        { video: ['video/AuditoryMaVisualKa.mp4'], syllables: jsPsych.randomization.repeat(['Ma', 'Ka', 'Na', 'La'],1) },
-        { video: ['video/AuditoryBaVisualGa.mp4'], syllables: jsPsych.randomization.repeat(['Ba', 'Ga', 'Da', 'Ma'],1) },
+        { video: ['video/AuditoryMaVisualTa.mp4'], syllables: jsPsych.randomization.repeat(['Ma', 'Ta', 'Na', 'La'],1) },
         { video: ['video/AuditoryBaVisualKa.mp4'], syllables: jsPsych.randomization.repeat(['Ba', 'Ka', 'Ga', 'Da'],1) },
-        { video: ['video/AuditoryPaVisualKa.mp4'], syllables: jsPsych.randomization.repeat(['Pa', 'Ka', 'Da', 'Ta'],1) },
+        { video: ['video/AuditoryPaVisualDa.mp4'], syllables: jsPsych.randomization.repeat(['Pa', 'Da', 'Ka', 'Ta'],1) },
         { video: ['video/AuditoryNaVisualDa.mp4'], syllables: jsPsych.randomization.repeat(['Na', 'Da', 'Ka', 'Ma'],1) },
         { video: ['video/AuditoryDaVisualMa.mp4'], syllables: jsPsych.randomization.repeat(['Da', 'Ma', 'Ba', 'Na'],1) },
-        { video: ['video/AuditoryGaVisualTa.mp4'], syllables: jsPsych.randomization.repeat(['Ga', 'Ta', 'Ka', 'Na'],1) },
-        { video: ['video/AuditoryTaVisualMa.mp4'], syllables: jsPsych.randomization.repeat(['Ta', 'Ma', 'Pa', 'Da'],1) },
+        { video: ['video/AuditoryTaVisualGa.mp4'], syllables: jsPsych.randomization.repeat(['Ta', 'Ga', 'Ka', 'Da'],1) },
     ],
     random_order: true,
-    repetitions: 7
+    repetitions: 10
     };
     timeline.push(incongTrial);
     
